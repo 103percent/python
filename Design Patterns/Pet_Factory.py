@@ -43,7 +43,7 @@ class Cat (Pet):
 
 class Pig (Pet):
 
-	"""A simple cat class"""
+	"""A simple pig class"""
 
 	def __init__(self, name):
 		Pet.__init__(self, name)
