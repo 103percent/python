@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4aa8591c0b403e8766ae1309910b40c6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4aa8591c0b403e8766ae1309910b40c6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4aa8591c0b403e8766ae1309910b40c6 = L.map(
+                "map_4aa8591c0b403e8766ae1309910b40c6",
+                {
+                    center: [50.8225, -0.1372],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f8759f57cee595e557cca80eaa40a2f8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f8759f57cee595e557cca80eaa40a2f8.addTo(map_4aa8591c0b403e8766ae1309910b40c6);
+        
+    
+            var marker_07ba7086027455a699f76b1b92d6f230 = L.marker(
+                [50.8261, -0.1273],
+                {
+}
+            ).addTo(map_4aa8591c0b403e8766ae1309910b40c6);
+        
+    
+            var icon_f5ed29a66a40f75f401c37306111fda7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2383d65b9b7a28a92ff9b53109b5eece = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7ba922429930718eef244600039c348 = $(`<div id="html_e7ba922429930718eef244600039c348" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">         <h4 style="margin-bottom:5px;">The Independent</h4>         <p style="margin-top:0;">Great selection of curated pints</p>         <small><i>Category: Legendary</i></small>     </div>     </div>`)[0];
+                popup_2383d65b9b7a28a92ff9b53109b5eece.setContent(html_e7ba922429930718eef244600039c348);
+            
+        
+
+        marker_07ba7086027455a699f76b1b92d6f230.bindPopup(popup_2383d65b9b7a28a92ff9b53109b5eece)
+        ;
+
+        
+    
+    
+                marker_07ba7086027455a699f76b1b92d6f230.setIcon(icon_f5ed29a66a40f75f401c37306111fda7);
+            
+    
+            var marker_f45db997afd5b587fe88662e2fab5682 = L.marker(
+                [50.839, -0.1334],
+                {
+}
+            ).addTo(map_4aa8591c0b403e8766ae1309910b40c6);
+        
+    
+            var icon_82c7238d77dc4143b16283988edd49f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_517a16f7bc008b3e49af4bcd9ea27671 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6863171d055bd54050066a2281c9aea7 = $(`<div id="html_6863171d055bd54050066a2281c9aea7" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">         <h4 style="margin-bottom:5px;">The Jolly Brewer</h4>         <p style="margin-top:0;">Great selection of curated pints</p>         <small><i>Category: Legendary</i></small>     </div>     </div>`)[0];
+                popup_517a16f7bc008b3e49af4bcd9ea27671.setContent(html_6863171d055bd54050066a2281c9aea7);
+            
+        
+
+        marker_f45db997afd5b587fe88662e2fab5682.bindPopup(popup_517a16f7bc008b3e49af4bcd9ea27671)
+        ;
+
+        
+    
+    
+                marker_f45db997afd5b587fe88662e2fab5682.setIcon(icon_82c7238d77dc4143b16283988edd49f8);
+            
+    
+            var marker_ad1ca395e184bb4b525ef194ea3430f3 = L.marker(
+                [50.8232, -0.1492],
+                {
+}
+            ).addTo(map_4aa8591c0b403e8766ae1309910b40c6);
+        
+    
+            var icon_cbd772825121803b299f034d2b3cd00e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01bb339c0c72fa18fb3a8b2df6a67115 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_714553ff87f63b2b40b71b730f905efe = $(`<div id="html_714553ff87f63b2b40b71b730f905efe" style="width: 100.0%; height: 100.0%;">     <div style="width: 280px;">         <h4 style="margin-bottom:5px;">The Hole in the Wall</h4>         <p style="margin-top:0;">Great selection of curated pints</p>         <small><i>Category: Legendary</i></small>     </div>     </div>`)[0];
+                popup_01bb339c0c72fa18fb3a8b2df6a67115.setContent(html_714553ff87f63b2b40b71b730f905efe);
+            
+        
+
+        marker_ad1ca395e184bb4b525ef194ea3430f3.bindPopup(popup_01bb339c0c72fa18fb3a8b2df6a67115)
+        ;
+
+        
+    
+    
+                marker_ad1ca395e184bb4b525ef194ea3430f3.setIcon(icon_cbd772825121803b299f034d2b3cd00e);
+            
+</script>
+</html>

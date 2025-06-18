@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f67757db891310913fb0d8317fe8d536 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f67757db891310913fb0d8317fe8d536" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f67757db891310913fb0d8317fe8d536 = L.map(
+                "map_f67757db891310913fb0d8317fe8d536",
+                {
+                    center: [50.8225, -0.1372],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0e90506acecbb0a0ca701aae0c7b0012 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0e90506acecbb0a0ca701aae0c7b0012.addTo(map_f67757db891310913fb0d8317fe8d536);
+        
+    
+            var marker_f21cf25df5e165dfcb8efcc00b3f56f1 = L.marker(
+                [50.8225, -0.1372],
+                {
+  "maxWidth": 2000,
+  "minWidth": 1000,
+}
+            ).addTo(map_f67757db891310913fb0d8317fe8d536);
+        
+    
+            var icon_d977fcc1046ee8843f9e06374363cc82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eed8fa7290bd7abf6d19ff6e27f96ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62128b241c1cf7efd2c587afbcb680cf = $(`<div id="html_62128b241c1cf7efd2c587afbcb680cf" style="width: 100.0%; height: 100.0%;"><b>Food for Friends</b><br>Vegetarian fine dining.</div>`)[0];
+                popup_8eed8fa7290bd7abf6d19ff6e27f96ef.setContent(html_62128b241c1cf7efd2c587afbcb680cf);
+            
+        
+
+        marker_f21cf25df5e165dfcb8efcc00b3f56f1.bindPopup(popup_8eed8fa7290bd7abf6d19ff6e27f96ef)
+        ;
+
+        
+    
+    
+                marker_f21cf25df5e165dfcb8efcc00b3f56f1.setIcon(icon_d977fcc1046ee8843f9e06374363cc82);
+            
+    
+            var marker_fd8ece0b6cb18cebaeee7c93ceae3292 = L.marker(
+                [50.8261, -0.1397],
+                {
+  "maxWidth": 2000,
+  "minWidth": 1000,
+}
+            ).addTo(map_f67757db891310913fb0d8317fe8d536);
+        
+    
+            var icon_101ccecdb17fb6cf19eff47486c1c24e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_854ee781e72273a9f77d9ff742e463a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90bde5b61fa29f8c6a3fcc2133e19ae0 = $(`<div id="html_90bde5b61fa29f8c6a3fcc2133e19ae0" style="width: 100.0%; height: 100.0%;"><b>The Chilli Pickle</b><br>Indian street food.</div>`)[0];
+                popup_854ee781e72273a9f77d9ff742e463a7.setContent(html_90bde5b61fa29f8c6a3fcc2133e19ae0);
+            
+        
+
+        marker_fd8ece0b6cb18cebaeee7c93ceae3292.bindPopup(popup_854ee781e72273a9f77d9ff742e463a7)
+        ;
+
+        
+    
+    
+                marker_fd8ece0b6cb18cebaeee7c93ceae3292.setIcon(icon_101ccecdb17fb6cf19eff47486c1c24e);
+            
+    
+            var marker_1d968f01d156cc991fbfb70522a22ab8 = L.marker(
+                [50.8239, -0.1477],
+                {
+  "maxWidth": 2000,
+  "minWidth": 1000,
+}
+            ).addTo(map_f67757db891310913fb0d8317fe8d536);
+        
+    
+            var icon_fbbda038ac3973a816a0040e0c3ba516 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6c8c2003814be6793d0bbe7c5ebac27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ad47eb959ac63bc349a460b77a612de = $(`<div id="html_5ad47eb959ac63bc349a460b77a612de" style="width: 100.0%; height: 100.0%;"><b>Bincho Yakitori</b><br>Japanese skewers & sake.</div>`)[0];
+                popup_d6c8c2003814be6793d0bbe7c5ebac27.setContent(html_5ad47eb959ac63bc349a460b77a612de);
+            
+        
+
+        marker_1d968f01d156cc991fbfb70522a22ab8.bindPopup(popup_d6c8c2003814be6793d0bbe7c5ebac27)
+        ;
+
+        
+    
+    
+                marker_1d968f01d156cc991fbfb70522a22ab8.setIcon(icon_fbbda038ac3973a816a0040e0c3ba516);
+            
+</script>
+</html>
