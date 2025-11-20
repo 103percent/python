@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 
 # ---------------------------------------------------
-# XGBoost Model (drops non-numeric columns)
+# XGBoost Model 
 # ---------------------------------------------------
 def run_xgboost(df, target):
     # Convert date column but don't use it
@@ -40,7 +40,7 @@ def run_xgboost(df, target):
 
 
 # ---------------------------------------------------
-# SARIMAX Model (uses date index)
+# SARIMAX Model 
 # ---------------------------------------------------
 def run_sarimax(df, target, order=(1,1,1), seasonal_order=(1,1,1,12)):
     if "date" not in df.columns:
@@ -65,7 +65,7 @@ def run_sarimax(df, target, order=(1,1,1), seasonal_order=(1,1,1,12)):
 # ---------------------------------------------------
 # Streamlit UI
 # ---------------------------------------------------
-st.title("📈 Model Selector: XGBoost vs SARIMAX")
+st.title("Forecast Maker")
 
 uploaded = st.file_uploader("Upload a CSV file", type=["csv"])
 
@@ -75,14 +75,14 @@ if uploaded:
     st.dataframe(df.head())
 
     # ---------------------------------------------------
-    # Determine Which Columns are Valid Targets
+    # Determine Columns
     # ---------------------------------------------------
     numeric_cols = df.select_dtypes(include=['int64', 'float64']).columns.tolist()
     non_date_cols = [c for c in df.columns if c != 'date']
 
     model_choice = st.radio("Choose a model:", ["XGBoost", "SARIMAX"])
 
-    # Determine default option: use 'target' if present
+    # Determine default option (target)
     default_target = "target" if "target" in df.columns else None
 
     # Choose valid options for each model
@@ -91,7 +91,7 @@ if uploaded:
     else:
         selectable_cols = non_date_cols
 
-    # Ensure default is valid — otherwise fallback to first option
+    # Ensure default is valid
     if default_target not in selectable_cols:
         default_target = selectable_cols[0]
 
@@ -107,12 +107,12 @@ if uploaded:
     if st.button("Run Model"):
         try:
             if model_choice == "XGBoost":
-                st.subheader("🚀 Running XGBoost")
+                st.subheader("Running XGBoost")
                 results = run_xgboost(df, target)
                 st.line_chart(results)
 
             else:
-                st.subheader("🌀 Running SARIMAX")
+                st.subheader("Running SARIMAX")
                 results = run_sarimax(df, target)
                 st.line_chart(results)
 
